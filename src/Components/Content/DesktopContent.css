@@ -1,0 +1,24 @@
+/* bootstrap fixed */
+.card{
+    max-height: inherit;
+    border: none !important;
+    border-radius: 0 !important;
+}
+
+.card-img{
+    max-height: inherit;
+}
+
+/* myself styles */
+.desktop-content-table{
+    max-height: 156px;
+    height: 100%;
+    border-top: 3px solid #FFFFFF;
+    bottom: -1.25rem;
+}
+
+.desktop-content-table__item:nth-child(2){
+    border-left: 3px solid #FFFFFF;
+    border-right: 3px solid #FFFFFF;
+}
+

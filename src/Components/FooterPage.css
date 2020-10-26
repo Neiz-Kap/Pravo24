@@ -1,0 +1,17 @@
+footer *{
+    color: white;
+}
+
+.footer-background {
+    background: url("../Image/footer/footer-background.jpg") center no-repeat;
+    background-size: cover;
+}
+
+.footer-size{
+    max-height: 580px;
+    height: 100%;
+}
+
+.btn-warning {
+    border-radius: 15px;
+}

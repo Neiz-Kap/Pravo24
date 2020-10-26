@@ -1,0 +1,28 @@
+
+/* Header right */
+
+.header-line {
+    width: 1px;
+    height: 53px;
+    margin: 0 42px;
+    background-color: #000000;
+}
+
+#navbar {
+    max-height: 165px !important;
+}
+
+.header-tel{
+
+}
+
+.header-btn {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 13px;
+    color: #FFFFFF;
+}
+
+.header-btn:hover, .header-btn:active, .header-btn:focus{
+    color: #FFFFFF!important; 
+}
