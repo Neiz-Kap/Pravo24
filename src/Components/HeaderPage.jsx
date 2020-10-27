@@ -46,16 +46,6 @@ export default function HeaderPage() {
                             </Nav.Link>
                         </Nav>
 
-
-
-
-
-                        
-
-
-
-
-
                         {/* Header right */}
                         {/* <div className="header-right">
                         <div className="header-right-info">
