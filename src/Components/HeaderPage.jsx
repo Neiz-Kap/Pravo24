@@ -8,59 +8,48 @@ export default function HeaderPage() {
         <header>
             <div className="sticky-top">
                 <Container fluid>
-                    <Navbar aria-controls="responsive-navbar" id="navbar" collapseOnSelect expand="lg">
+                    <Navbar aria-controls="responsive-navbar" className="d-flex justify-content-between" id="navbar" collapseOnSelect expand="lg">
                         {/* Logo */}
-                        <Navbar.Brand className="mr-5">
-                            <Nav.Link>
-                                <Link to="/" className="black">Miura.pro</Link>
-                            </Nav.Link>
-                        </Navbar.Brand>
+                        {/* <Nav.Item className="w-100 d-flex justify-content-between"> */}
+                            <Navbar.Brand className="mr-5">
+                                <Nav.Link>
+                                    {/* <Link to="/">Miura.pro</Link> */}
+                                    <Link to="/" className="header-logo"></Link>
+                                </Nav.Link>
+                            </Navbar.Brand>
+                            <Navbar.Toggle aria-controls="responsive-navbar" />
+                        {/* </Nav.Item> */}
+
                         {/* Navigation */}
-                        <Navbar.Toggle aria-controls="responsive-navbar" />
-                        <Navbar.Collapse className="mr-auto">
+                        <Navbar.Collapse className="header-nav">
                             <Nav className="w-100 justify-content-between">
-                                <Nav.Link className="description-text black text-uppercase">
+                                <Nav.Link className="header-nav-link black text-uppercase">
                                     <Link to="/company" className="black">Компания</Link>
                                 </Nav.Link>
-                                <Nav.Link className="description-text black text-uppercase">
+                                <Nav.Link className="header-nav-link black text-uppercase">
                                     <Link to="/services" className="black">Услуги</Link>
                                 </Nav.Link>
-                                <Nav.Link className="description-text black text-uppercase">
+                                <Nav.Link className="header-nav-link black text-uppercase">
                                     <Link to="/contacts" className="black">Контакты</Link>
+                                </Nav.Link>
+                                <Nav.Link className="header-nav-link black text-uppercase">
+                                    <Link to="/partners" className="black">Партнёры</Link>
+                                </Nav.Link>
+                                <Nav.Link className="header-nav-link black text-uppercase">
+                                    <Link to="/personal-area" className="black">Личный кабинет</Link>
                                 </Nav.Link>
                             </Nav>
                         </Navbar.Collapse>
-                        <Nav className="align-items-center">
-                            <Nav.Item className="ml-5 w-100 d-flex flex-column align-items-center">
-                                <p className="description-text orange font-weight-bold">+7(495)597-97-94</p>
+                        <Navbar.Collapse className="header-right">
+                            <Nav.Item className="d-flex justify-content-between">
+                                <p className="header__tel">+7(495)597-97-94</p>
+                                <p className="header-nav-link ml-5 mb-0 text-uppercase">Москва</p>
+                            </Nav.Item>
+                            <Nav.Item>
                                 <Button className="btn-warning header-btn text-uppercase" variant="primary">Заказать звонок</Button>
                             </Nav.Item>
-                            <Nav.Item className="header-line"></Nav.Item>
-                            <p className="ml-5 mb-0 description-text black text-uppercase">
-                                Москва
-                            </p>
-                            <Nav.Link className="ml-5">
-                                <u>
-                                    <Link to="/personal-area" className="description-text black">Личный кабинет</Link>
-                                </u>
-                            </Nav.Link>
-                        </Nav>
+                        </Navbar.Collapse>
 
-                        {/* Header right */}
-                        {/* <div className="header-right">
-                        <div className="header-right-info">
-                            <div className="header-right-call">
-                                <p className="header-right-tel"></p>
-                                
-                            
-                            </div>
-                            <div className="header-right-line"></div>
-                            <p className="header-right-address"></p>
-                        </div>
-                        <div className="header-personal-area">
-                            
-                        </div>
-                    </div> */}
                     </Navbar>
                 </Container>
             </div>

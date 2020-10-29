@@ -19,6 +19,7 @@ import { PersonalAreaContent } from './Components/Content/PersonalAreaContent';
 import { CompanyContent } from './Components/Content/CompanyContent';
 import { ContactsContent } from './Components/Content/ContactsContent';
 import { ServicesContent } from './Components/Content/ServicesContent';
+import { PartnersContent } from './Components/Content/PartnersContent';
 
 export default class Template extends React.Component {
     render() {
@@ -32,6 +33,7 @@ export default class Template extends React.Component {
                         <Route path="/company" component={CompanyContent} />
                         <Route path="/contacts" component={ContactsContent} />
                         <Route path="/services" component={ServicesContent} />
+                        <Route path="/partners" component={PartnersContent} />
                     </Switch>
                     <FooterPage />
                 </Router>

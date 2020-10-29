@@ -19,8 +19,8 @@ export const DesktopContent = () => (
                         </Card.Body>
                         <Row className="position-absolute fixed-bottom desktop-content-table">
                             <Col className="desktop-content-table__item">
-                                <div>
-                                    <div className="col__item-top">
+                                <div className="h-100 d-flex flex-column justify-content-center align-items-center">
+                                    <div className="col__item-top d-flex align-items-center">
                                         <span>7</span>
                                         <img src={medal} alt="icon svg" />
                                     </div>
@@ -31,12 +31,12 @@ export const DesktopContent = () => (
                             </Col>
                             <Col className="desktop-content-table__item">
                                 <div>
-                                    <div className="col__item-top">
-                                        <span>720</span>
+                                    <div className="desktop-col__item-top">
+                                        <span className="desktop-col__number">720</span>
                                         <img src={people} alt="icon svg" />
                                     </div>
-                                    <div className="col__item-bottom">
-                                        <span>клиентов</span>
+                                    <div className="desktop-col__item-bottom">
+                                        <span className="desktop-col__text">клиентов</span>
                                     </div>
                                 </div>
                             </Col>

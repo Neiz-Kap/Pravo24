@@ -1,5 +1,6 @@
 import React from 'react';
-import { Navbar, Nav, Link, Button, Container } from 'react-bootstrap';
+import { Navbar, Nav, Button, Container } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import youtube from '../Image/footer/youtube.svg'
 import facebook from '../Image/footer/facebook.svg'
 import instagram from '../Image/footer/instagram.svg'
@@ -15,29 +16,36 @@ function FooterPage() {
         <>
             <footer className="footer-background">
                 <Container>
-                    <Navbar collapseOnSelect expand="lg" className="footer-size" /*bg="dark" variant="dark"*/>
+                    <Navbar collapseOnSelect expand="lg" className="footer-size d-flex justify-content-between" /*bg="dark" variant="dark"*/>
 
                         {/* <Navbar.Toggle aria-controls="responsive-navbar" /> */}
                         {/* <Navbar.Collapse> */}
-                        <Nav className="mr-auto">
-                            <Nav.Link>
-                                {/* <Link to="/company"> */}
-                                <p>Компания</p>
-                                <p>Услуги</p>
-                                <p>Контакты</p>
-                                <p>Публикации</p>
-                                <p>Политика конфиденциальности</p>
-                                <p>Cookie Policy</p>
-                                <p>© 2012—2020 Все права защищены</p>
-
-
-                            </Nav.Link>
-                            <Nav.Link>
-                                {/* <Link to="/services"> */}
-                                <p>FAQ</p>
-                            </Nav.Link>
+                        <Nav className="">
+                            <Nav.Item>
+                                {/* <Link > */}
+                                <Nav.Link className="">
+                                    <Link to="/company">Компания</Link>
+                                </Nav.Link>
+                                <Nav.Link>
+                                    <Link to="/services">Услуги</Link>
+                                </Nav.Link>
+                                <Nav.Link>
+                                    <Link to="/contacts">Контакты</Link>
+                                </Nav.Link>
+                                <Nav.Link>
+                                    <Link to="/personal-area">Личный кабинет</Link>
+                                </Nav.Link>
+                                <Nav.Link>
+                                    <Link to="/partners">Партнеры</Link>
+                                </Nav.Link>
+                                <p className="Gray" style={{ width: 280, height: 34, }}>Политика конфиденциальности <br /> Cookie Policy</p>
+                                <p className="Gray" style={{marginTop: 30}}>© 2012—2020 Все права защищены</p>
+                            </Nav.Item>
+                            {/* <Nav.Link>       */}
+                            {/* <Link > */}
+                            {/* </Nav.Link> */}
                             {/* <Nav.Link> */}
-                            {/* <Link to="/contacts"> */}
+                            {/* <Link > */}
 
                             {/* </Nav.Link> */}
                             {/* <Nav.Link> */}
@@ -48,60 +56,21 @@ function FooterPage() {
                         {/* <Nav>
                             <Button className="btn-warning" variant="primary" >Заказать звонок</Button>
                         </Nav> */}
+                        <div className="footer-nav__right">
+                            <div className="d-flex justify-content-between" style={{ marginBottom: 85 }}>
+                                <img src={youtube} style={{ width: 30, height: 30 }} alt="youtube" />
+                                <img src={facebook} style={{ marginLeft: 68, width: 30, height: 30 }} alt="facebook" />
+                                <img src={instagram} style={{ marginLeft: 68, width: 30, height: 30 }} alt="instagram" />
+                            </div>
+                            <p className="footer-nav__right-description" >Данный сайт имеет исключительно информационное значение, не предназначен и не должен трактоваться как реклама юридических или иных услуг.</p>
+                            <p className="ml-auto" style={{ width: 146, height: 44, textAlign: "right" }}>This site is made by Miura.pro</p>
+                        </div>
 
-                        <img src={youtube} alt="youtube" />
-                        <img src={facebook} alt="facebook" />
-                        <img src={instagram} alt="instagram" />
                         {/* </Navbar.Collapse> */}
                     </Navbar>
                 </Container>
             </footer>
-
-            {/* <footer class="footer-w">
-        <div class="max_width">
-            <div class="footer__left">
-                <div class="left__menu">
-                    <div>
-                        <a href="/company/">Компания</a>
-                        <a href="/our_services/">Услуги</a>
-                        <a
-                            href="/parthners/">Партнеры</a>
-                            <a href="/publications/">Публикации</a>
-                            </div>
-                    <div>
-                        <a href="/faq/">FAQ</a><a href="/contacts/">Контакты</a>
-                    </div>
-                </div>
-                <div class="left__gdpr" style="margin-top: 25px"><a href="/privacy/">Политика конфиденциальности</a>
-                </div>
-                <div class="left__cookies" style="margin-top: 5px"><a href="/cookie/">Cookie policy</a></div>
-                <div class="left__copyright">© 2012—2020 «SBSB» Все права защищены</div>
-            </div>
-            <div class="footer__right">
-                <div class="right__socials">
-                    <a href="https://www.youtube.com/channel/UC0y558Xg15AsQYvlc-z7HLw/" class="socials__item m_youtube"
-                        rel="nofollow">
-                        <img src="/i/company/youtube.png" />
-                    </a>
-                    <a href="https://www.facebook.com/SBSB.Business/" class="socials__item m_facebook" rel="nofollow">
-                        <img src="/i/company/facebook.png" />
-                    </a>
-                    <a href="https://www.linkedin.com/company/sbsb/about/" class="socials__item m_in" rel="nofollow">
-                        <img src="/i/company/in.png" />
-                    </a>
-                </div>
-                <div class="right__disclaimer">
-                    <a href="/disclaimer/">Данный сайт имеет исключительно <br />информационное
-                        значение, не предназначен <br />и не должен трактоваться как реклама <br />юридических или иных
-                        услуг.</a>
-                </div>
-                <div class="right__design">this site is made by<br />
-                    <a href="https://dudka.agency/" target="_blank" rel="nofollow">Dudka Agency</a>
-                </div>
-            </div>
-        </div>
-    </footer> */}
-    </>
+        </>
     );
 }
 
