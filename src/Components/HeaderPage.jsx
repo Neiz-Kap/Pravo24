@@ -12,7 +12,7 @@ export default function HeaderPage() {
                         {/* Logo */}
                         {/* <Nav.Item className="w-100 d-flex justify-content-between"> */}
                             <Navbar.Brand className="mr-5">
-                                <Nav.Link>
+                                <Nav.Link href="/">
                                     {/* <Link to="/">Miura.pro</Link> */}
                                     <Link to="/" className="header-logo"></Link>
                                 </Nav.Link>

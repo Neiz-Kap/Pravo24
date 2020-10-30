@@ -1,9 +1,9 @@
 import React from 'react';
-import './DesktopContent.css';
 import { Card, Button, Row, Col } from 'react-bootstrap';
+import './DesktopContent.css';
 import desktop_background from '../../Image/desctopContent/desktop-background.jpg'
-import build from '../../Image/desctopContent/building.svg'
-import medal from '../../Image/desctopContent/medal.svg'
+import bank from '../../Image/desctopContent/bank.svg'
+import achievement from '../../Image/desctopContent/achievement.svg'
 import people from '../../Image/desctopContent/people.svg'
 
 export const DesktopContent = () => (
@@ -14,24 +14,24 @@ export const DesktopContent = () => (
                 <Card.ImgOverlay>
                     <Card.Body className="position-relative w-100 h-100">
                         <Card.Body className="h-100 d-flex flex-column align-items-center justify-content-center">
-                            <Card.Title className="text-center">ЮРИСТЫ</Card.Title>
+                            <Card.Title className="text-center">Право24</Card.Title>
                             <Button variant="warning">Бесплатная консультация</Button>
                         </Card.Body>
                         <Row className="position-absolute fixed-bottom desktop-content-table">
                             <Col className="desktop-content-table__item">
                                 <div className="h-100 d-flex flex-column justify-content-center align-items-center">
-                                    <div className="col__item-top d-flex align-items-center">
-                                        <span>7</span>
-                                        <img src={medal} alt="icon svg" />
+                                    <div className="desktop-col__item-top d-flex align-items-center">
+                                        <span className="desktop-col__number">7</span>
+                                        <img src={achievement} alt="icon svg" />
                                     </div>
                                     <div className="col__item-bottom">
-                                        <span>лет опыта</span>
+                                        <span className="desktop-col__text">лет опыта</span>
                                     </div>
                                 </div>
                             </Col>
                             <Col className="desktop-content-table__item">
-                                <div>
-                                    <div className="desktop-col__item-top">
+                                <div className="h-100 d-flex flex-column justify-content-center align-items-center">
+                                    <div className="desktop-col__item-top d-flex align-items-center">
                                         <span className="desktop-col__number">720</span>
                                         <img src={people} alt="icon svg" />
                                     </div>
@@ -41,13 +41,13 @@ export const DesktopContent = () => (
                                 </div>
                             </Col>
                             <Col className="desktop-content-table__item">
-                                <div>
-                                    <div className="col__item-top">
-                                        <span>100</span>
-                                        <img src={build} alt="icon svg" />
+                                <div className="h-100 d-flex flex-column justify-content-center align-items-center">
+                                    <div className="desktop-col__item-top d-flex align-items-center">
+                                        <span className="desktop-col__number">100</span>
+                                        <img src={bank} alt="icon svg" />
                                     </div>
                                     <div className="col__item-bottom">
-                                        <span>банков-партнёров</span>
+                                        <span className="desktop-col__text">банков-партнёров</span>
                                     </div>
                                 </div>
                             </Col>

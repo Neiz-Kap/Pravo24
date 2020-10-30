@@ -29,3 +29,9 @@
     line-height: 74px;
     color: #DEA033;
 }
+
+.desktop-col__text {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+}
