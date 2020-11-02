@@ -1,0 +1,28 @@
+.desktop-slider {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+
+.desktop-slider__item {
+    max-width: 197px;
+    width: 100%;
+    max-height: 181px;
+    height: 100%;
+    margin: 0 64px;
+}
+/* .clients-slider {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+
+.clients-slider__item {
+    max-width: 197px;
+    width: 100%;
+    max-height: 181px;
+    height: 100%;
+    margin: 0 64px;
+} */

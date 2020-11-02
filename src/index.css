@@ -1,5 +1,50 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
 
+/* regular */
+/* @font-face {
+    font-family: 'San Francisco';
+    src: url('./Fonts/SF_Display/San-Francisco-Pro-Display-Regular/SFProDisplay-Regular.eot');
+    src: url('./Fonts/SF_Display/San-Francisco-Pro-Display-Regular/SFProDisplay-Regular.woff2') format('woff2'), 
+    url('./Fonts/SF_Display/San-Francisco-Pro-Display-Regular/SFProDisplay-Regular.woff') format('woff'), 
+    url('./Fonts/SF_Display/San-Francisco-Pro-Display-Regular/SFProDisplay-Regular.ttf') format('truetype'), 
+    url('./Fonts/SF_Display/San-Francisco-Pro-Display-Regular/SFProDisplay-Regular.svg') format('svg');
+    font-weight: 400;
+    font-style: normal;
+} */
+
+/* medium */
+/* @font-face {
+    font-family: 'San Francisco';
+    src: local('./Fonts/SF_Display/San-Francisco-Pro-Display-Medium'),
+        url('SFProDisplay-Medium.woff2') format('woff2'),
+        url('SFProDisplay-Medium.woff') format('woff'),
+        url('SFProDisplay-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+} */
+
+/* semibold */
+/* @font-face {
+    font-family: 'San Francisco';
+    src: local('./Fonts/SF_Display/San-Francisco-Pro-Display-Semibold'),
+        url('SFProDisplay-Semibold.woff2') format('woff2'),
+        url('SFProDisplay-Semibold.woff') format('woff'),
+        url('SFProDisplay-Semibold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+} */
+
+/* bold */
+/* @font-face {
+    font-family: 'San Francisco';
+    src: local('./Fonts/SF_Display/San-Francisco-Pro-Display-Bold'),
+        url('SFProDisplay-Bold.woff2') format('woff2'),
+        url('SFProDisplay-Bold.woff') format('woff'),
+        url('SFProDisplay-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+} */
+
 * {
     font-family: 'Open Sans', sans-serif !important;
     font-weight: normal;
@@ -17,17 +62,13 @@ code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
 
-/* .description-text {
-    font-size: 1.5vw;
-    line-height: 27px;
-    text-shadow: 0px 3px 4px rgba(0, 0, 0, 0.25);
-} */
-
-
-:root{
+:root {
     --moderate-yellow: #DEA033;
 }
 
+/* ---------- 
+    fixed bootstrap 
+----------*/
 .card-img {
     height: 100%;
 }
@@ -38,6 +79,11 @@ code {
     height: 100vh;
 }
 
+.h-100vh-content{
+    min-height: calc(100vh - 93px);
+    height: calc(100vh - 93px);
+}
+
 /* color text */
 .black {
     color: #000000 !important;
@@ -45,6 +91,10 @@ code {
 
 .orange {
     color: #FB8902;
+}
+
+.satin-sheen-gold {
+    color: #dea033;
 }
 
 .light-grey {
@@ -60,10 +110,40 @@ code {
     font-weight: 600;
 }
 
+/* placeholder center */
+.placeholder-center::placeholder {
+    text-align: center;
+}
+
+/* titles */
+.content__title--color-satingold {
+    padding-top: 2rem;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: calc(38/28);
+    color: #dea033;
+}
+
+/* ------
+    background
+----- */
+.background--color-blackhaze {
+    background-color: #F7F7F7;
+}
+
+.background--color-light-blackhaze{
+    background-color: #F4F6F9;
+}
+
 /* -----
     position
 ------ */
-.t-50{
+.t-40 {
+    top: 40%;
+    transform: translateY(-50%);
+}
+
+.t-50 {
     top: 50%;
     transform: translateY(-50%);
 }
@@ -75,4 +155,18 @@ code {
     font-size: 12px !important;
     line-height: 16px !important;
     color: #FFFFFF;
+    position: absolute;
+    top: 28px;
+    left: 15px;
+
+}
+
+/* ----Link in Card for Desktop and Services---- */
+.services__item-link {
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 23px;
+    text-transform: uppercase;
+    text-decoration-line: underline;
+    color: #DEA033;
 }

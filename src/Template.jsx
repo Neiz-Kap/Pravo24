@@ -2,8 +2,8 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './Template.css';
 import { render } from '@testing-library/react';
-import HeaderPage from './Components/HeaderPage';
-import FooterPage from './Components/FooterPage';
+import HeaderPage from './Components/Pages/HeaderPage';
+import FooterPage from './Components/Pages/FooterPage';
 
 
 import {
@@ -14,12 +14,12 @@ import {
 } from 'react-router-dom';
 
 
-import { DesktopContent } from './Components/Content/DesktopContent';
-import { PersonalAreaContent } from './Components/Content/PersonalAreaContent';
-import { CompanyContent } from './Components/Content/CompanyContent';
-import { ContactsContent } from './Components/Content/ContactsContent';
-import { ServicesContent } from './Components/Content/ServicesContent';
-import { PartnersContent } from './Components/Content/PartnersContent';
+import { DesktopContent } from './Components/Pages/DesktopPage';
+import { PersonalAreaContent } from './Components/Sections/PersonalAreaContent';
+import { CompanyContent } from './Components/Sections/CompanyPage';
+import { ContactsContent } from './Components/Sections/ContactsContent';
+import { ServicesContent } from './Components/Sections/ServicesContent';
+import { PartnersContent } from './Components/Sections/PartnersContent';
 
 export default class Template extends React.Component {
     render() {

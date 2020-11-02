@@ -1,0 +1,198 @@
+.Container-image {
+    max-width: 100%;
+    height: 1186px;
+    padding: 74px 0;
+    margin-bottom: 135px;
+    background: url(../../Image/services/services_background.jpg) center / cover no-repeat;
+}
+
+.service {
+    height: 28px;
+    font-size: 28px;
+    text-align: center;
+    color: #dea033;
+}
+
+.description {
+    width: 844px;
+    height: 66.89px;
+    margin-top: 67px;
+    text-align: center;
+    color: #ffffff;
+    font-size: 18px;
+}
+
+/* карточки */
+
+.maps {
+    margin-top: 108px;
+    display: flex;
+    justify-content: space-evenly; 
+}
+
+.map {
+    width: 292px;
+    height: 280px;
+    background: #ffffff;
+    border-radius: 12px;
+    text-align: center;
+}
+
+/* картинки в карточках */
+
+.fa-Group{
+    width: 60px;
+    height:50px;
+    margin-left: 110px;
+    margin-top: 46px;
+    margin-bottom: 11px;
+}
+
+.fa-Vector{
+    width: 70px;
+    height:51px;
+    margin-left: 111px;
+    margin-top: 46px;
+    margin-bottom: 11px;
+}
+
+.fa-inheritance{
+    width: 60px;
+    height:50px;
+    margin-left: 116px;
+    margin-top: 46px;
+    margin-bottom: 11px;
+}
+
+.fa-contract{
+    width: 60px;
+    height:50px;
+    margin-left: 123px;
+    margin-top: 46px;
+    margin-bottom: 11px;
+}
+
+.fa-Group1{
+    width: 60px;
+    height:50px;
+    margin-left: 117px;
+    margin-top: 46px;
+    margin-bottom: 11px;
+}
+
+.fa-Group2{
+    width: 60px;
+    height:50px;
+    margin-left: 116px;
+    margin-top: 46px;
+    margin-bottom: 11px;
+}
+
+/* текст в картинках */
+
+.Statement-cancellation{
+    width: 190px;
+    height: 65px;
+    line-height: 24px;
+    margin-left: 51px;
+    margin-bottom: 22px;
+    font-weight: 500;
+    font-size: 19px;
+    color: #000000;
+}
+
+.Statement-extraditions{
+    width: 225px;
+    height: 77px;
+    margin-left: 34px;
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 20px;
+    color: #000000;
+}
+
+.Statement-establishments{
+    width: 220px;
+    height: 65px;
+    margin-left: 41px;
+    margin-bottom: 22px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: #000000;
+}
+
+.Development{
+    width: 187px;
+    height: 43px;
+    margin-left: 53px;
+    margin-bottom: 44px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: #000000;
+}
+
+.claim{
+    width: 137px;
+    height: 44px;
+    margin-left: 78px;
+    margin-bottom: 43px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: #000000;
+}
+
+.Conduction{
+    width: 123px;
+    height: 68px;
+    margin-left: 85px;
+    margin-bottom: 19px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: #000000;
+}
+
+/* копки в карточках */
+
+.detailed{
+    font-weight: 600;
+    font-size: 17px;
+    color: #DEA033;
+    margin-left: 93px;
+}
+
+/*  */
+
+.descr{
+    max-width: 100%;
+    text-align: center;
+}
+
+.description-below{
+    height: 33px;
+    margin-top: 180px;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 33px;
+}
+
+.descriptiona{
+    color: #DEA033;
+    font-family: 'Open Sans';
+    height: 33px;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 33px;
+}
+
+
+.letter{
+    position: relative;
+    bottom: 3px;
+    font-size: 24px;
+    color: black;
+}
