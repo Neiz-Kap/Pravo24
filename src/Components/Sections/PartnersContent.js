@@ -3,14 +3,14 @@ import { Container, Card, Image } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import './PartnersContent.css';
 
-import award_6 from '../../Image/awardsSection/award-6.png';
+// import award_6 from '../../Image/awardsSlider/award-6.png';
 
-import bigcoinstar from '../../Image/clientsSection/bigcoinstar.png';
-import eviguard from '../../Image/clientsSection/eviguard.png';
-import chartered_bank from '../../Image/clientsSection/standard_chartered_bank.png';
-import hellenic from '../../Image/clientsSection/hellenic.png';
-import lukspay from '../../Image/clientsSection/lukspay.png';
-import lpb from '../../Image/clientsSection/lpb.png';
+import bigcoinstar from '../../Image/ClientsSlider/bigcoinstar.png';
+import eviguard from '../../Image/ClientsSlider/eviguard.png';
+import chartered_bank from '../../Image/ClientsSlider/standard_chartered_bank.png';
+import hellenic from '../../Image/ClientsSlider/hellenic.png';
+import lukspay from '../../Image/ClientsSlider/lukspay.png';
+import lpb from '../../Image/ClientsSlider/lpb.png';
 
 export const PartnersContent = () => (
     <section className="background--color-light-blackhaze ">
@@ -26,16 +26,16 @@ export const PartnersContent = () => (
                     <Image src={eviguard}/>
                 </Card>
                 <Card className="partners__item d-flex justify-content-center align-items-center">
-                    <Image src={eviguard}/>
+                    <Image src={chartered_bank}/>
                 </Card>
                 <Card className="partners__item d-flex justify-content-center align-items-center">
-                    <Image src={eviguard}/>
+                    <Image src={hellenic}/>
                 </Card>
                 <Card className="partners__item d-flex justify-content-center align-items-center">
-                    <Image src={award_6}/>
+                    <Image src={lukspay}/>
                 </Card>
                 <Card className="partners__item d-flex justify-content-center align-items-center">
-                    <Image src={eviguard}/>
+                    <Image src={lpb}/>
                 </Card>
                 <Card className="partners__item d-flex justify-content-center align-items-center">
                     <Image src={eviguard}/>

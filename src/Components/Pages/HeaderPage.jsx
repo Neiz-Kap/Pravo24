@@ -6,7 +6,7 @@ import './HeaderPage.css';
 export default function HeaderPage() {
     return (
         <header>
-            <div className="sticky-top">
+            <div className="">
                 <Container fluid>
                     <Navbar aria-controls="responsive-navbar" className="d-flex justify-content-between" id="navbar" collapseOnSelect expand="lg">
                         {/* Logo */}

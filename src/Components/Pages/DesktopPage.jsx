@@ -14,7 +14,7 @@ import services_icon_4 from '../../Image/services/services_icon (4).svg';
 import services_icon_5 from '../../Image/services/services_icon (5).svg';
 import services_icon_6 from '../../Image/services/services_icon (6).svg';
 
-import video from '../../Image/desctopPage/video.png';
+import video from '../../Image/desctopPage/video.jpg';
 import youtube_icon from '../../Image/desctopPage/youtube-icon.svg';
 
 import main_news from '../../Image/desctopPage/main_news.png';
@@ -22,8 +22,9 @@ import news_1 from '../../Image/desctopPage/news_1.png';
 import news_2 from '../../Image/desctopPage/news_2.png';
 import news_3 from '../../Image/desctopPage/news_3.png';
 
-import ClientsSection from '../Sections/ClientsSection';
-import AwardsSection from '../Sections/AwardsSection';
+import ClientsSlider from '../Sections/ClientsSlider';
+import AwardsSlider from '../Sections/AwardsSlider';
+import ApplicationSection from '../Sections/ApplicationSection';
 
 export const DesktopContent = () => (
     <main>
@@ -34,7 +35,7 @@ export const DesktopContent = () => (
                     <Card.Body className="position-relative w-100 h-100">
                         <Card.Body className="h-100 d-flex flex-column align-items-center justify-content-center">
                             <Card.Title className="text-center">Право24</Card.Title>
-                            <Button variant="warning">Бесплатная консультация</Button>
+                            <Button className="header-btn" variant="warning">Бесплатная консультация</Button>
                         </Card.Body>
                         <Row className="position-absolute fixed-bottom desktop-content-table">
                             <Col className="desktop-content-table__item">
@@ -113,50 +114,71 @@ export const DesktopContent = () => (
                 </div>
             </Container>
         </section>
-        <ClientsSection />
+        <ClientsSlider />
         <section>
-            <h2 className="content__title--color-satingold mx-auto text-center">Видео</h2>
-            {/* .video-block>video.video+.video-info>h3.video__title+p.video-description+Link[to=""]>img.video_link-icon+p.video_link-text */}
-            <div className="video-block">
-                <video src="" className="video"></video>
-                <div className="video-info">
-                    <h3 className="video__title">О компании</h3>
-                    <p className="video-description">
-                        SBSB&nbsp;&mdash; одна из&nbsp;сильнейших юридических фирм в&nbsp;СНГ и&nbsp;Европе, консультирующая по&nbsp;вопросам в&nbsp;области FinTech. Мы&nbsp;углубленно занимаемся двумя направлениями: FinTech и&nbsp;налоговое право. Это позволяет нашей команде быть квалифицированными и&nbsp;опытными специалистами именно в&nbsp;этих сферах.
+            <Container>
+                <h2 className="content__title--color-satingold mx-auto text-center">Видео</h2>
+                {/* .video-block>video.video+.video-info>h3.video__title+p.video-description+Link[to=""]>img.video_link-icon+p.video_link-text */}
+                <div className="desktop-video-block pb-5 d-flex justify-content-between">
+                    {/* <video src="" className="desktop-video"></video> */}
+                    <img src={video} alt="video" />
+
+                    <div className="desktop-video-info ml-5">
+                        <h3 className="desktop-video__title satin-sheen-gold text-center">О компании</h3>
+                        <p className="desktop-video-description">
+                            SBSB&nbsp;&mdash; одна из&nbsp;сильнейших юридических фирм в&nbsp;СНГ и&nbsp;Европе, консультирующая по&nbsp;вопросам в&nbsp;области FinTech. Мы&nbsp;углубленно занимаемся двумя направлениями: FinTech и&nbsp;налоговое право. Это позволяет нашей команде быть квалифицированными и&nbsp;опытными специалистами именно в&nbsp;этих сферах.
                     </p>
-                    <Link to="">
-                        <img src={youtube_icon} alt="" className="video_link-icon" />
-                        <p className="video_link-text"></p>
-                    </Link>
+                        <Link to="" className="d-flex">
+                            <img src={youtube_icon} alt="" className="desktop-video_link-icon" />
+                            <h5 className="desktop-video_link-text">YouTube Channel</h5>
+                        </Link>
+                    </div>
                 </div>
-            </div>
+            </Container>
         </section>
-        <section className="background--color-blackhaze">
+        {/* ------
+        ------- */}
+        <section className="background--color-blackhaze pb-5">
             <Container>
                 <h2 className="content__title--color-satingold mx-auto text-center">Новости</h2>
                 {/* .news>.news-list>.news-list__item*3>img.news-list__item-img+p.news-list__item-text^^.news-main>.news-main-description */}
                 <div className="news mt-5 d-flex justify-content-between">
                     <div className="news-list mr-4">
                         <div className="news-list__item d-flex align-items-center">
-                            <Image src={news_1} className="news-list__item-img mr-4"/>
+                            <Image src={news_1} className="news-list__item-img mr-4" />
                             <p className="news-list__item-text">В США появится первый криптобанк</p>
                         </div>
                         <div className="news-list__item d-flex align-items-center">
-                            <Image src={news_2} className="news-list__item-img mr-4"/>
+                            <Image src={news_2} className="news-list__item-img mr-4" />
                             <p className="news-list__item-text">PISP и AISP: новые возможности для необанков? </p>
                         </div>
                         <div className="news-list__item d-flex align-items-center">
-                            <Image src={news_3} className="news-list__item-img mr-4"/>
+                            <Image src={news_3} className="news-list__item-img mr-4" />
                             <p className="news-list__item-text">Онлайн-сессия CEO SBSB</p>
                         </div>
                     </div>
                     <div className="news-main">
-                        <Image src={main_news}/>
+                        <Image src={main_news} />
                         <div className="news-main-description"></div>
                     </div>
                 </div>
             </Container>
         </section>
-        <AwardsSection />
+        {/* ---------------------------------------- */}
+        {/* -------
+            Awards
+        --------- */}
+        <AwardsSlider />
+        {/* -------
+            /Awards
+        --------- */}
+        {/* ---------------------------------------- */}
+        {/* --------
+            Application
+        --------- */}
+        <ApplicationSection/>
+        {/* --------
+            /Application
+        --------- */}
     </main>
 )

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Card, Button, Form } from 'react-bootstrap';
+import { Container, Card, Button, Form, ListGroup } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import './ContactsContent.css';
 
@@ -51,24 +51,24 @@ export const ContactsContent = () => (
         <section>
             <Container className="d-flex flex-column align-items-center">
                 <h2 className="contacts__title mt-3 mb-4 text-center">Дополнительные контакты</h2>
-                <ul className="contacts-list">
-                    <li className="w-100 d-flex mb-3">
+                <ListGroup className="contacts-list">
+                    <ListGroup.Item className="w-100 d-flex mb-3">
                         <img src={messages} className="mr-5" alt=""/>
                         <h5 className="contacts-info__title">pochta@ya.com</h5>
-                    </li>
-                    <li className="w-100 d-flex mb-3">
+                    </ListGroup.Item>
+                    <ListGroup.Item className="w-100 d-flex mb-3">
                         <img src={skype} className="mr-5" alt=""/>
                         <h5 className="contacts-info__title">info_631667</h5>
-                    </li>
-                    <li className="w-100 d-flex mb-3">
+                    </ListGroup.Item>
+                    <ListGroup.Item className="w-100 d-flex mb-3">
                         <img src={facebook} className="mr-5" alt=""/>
                         <h5 className="contacts-info__title text-nowrap">Facebook Community </h5>
-                    </li>
-                    <li className="w-100 d-flex mb-3">
+                    </ListGroup.Item>
+                    <ListGroup.Item className="w-100 d-flex mb-3">
                         <img src={lindekin} className="mr-5" alt=""/>
                         <h5 className="contacts-info__title">LinkedIn</h5>
-                    </li>
-                </ul>
+                    </ListGroup.Item>
+                </ListGroup>
             </Container>
         </section>
     </main>

@@ -71,4 +71,32 @@
     line-height: calc(24/20);
 }
 
-/*  */
+/* ---------------
+    Video Section
+---------------- */
+.desktop-video-block {}
+
+.desktop-video-info {}
+
+.desktop-video__title {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 33px;
+}
+
+.desktop-video-description {
+    font-size: 20px;
+    line-height: 27px;
+}
+
+.desktop-video_link-icon {
+    margin-bottom: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+.desktop-video_link-text {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    color: #000000;
+}

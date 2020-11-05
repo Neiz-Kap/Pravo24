@@ -16,7 +16,7 @@ import {
 
 import { DesktopContent } from './Components/Pages/DesktopPage';
 import { PersonalAreaContent } from './Components/Sections/PersonalAreaContent';
-import { CompanyContent } from './Components/Sections/CompanyPage';
+import { CompanyPage } from './Components/Pages/CompanyPage';
 import { ContactsContent } from './Components/Sections/ContactsContent';
 import { ServicesContent } from './Components/Sections/ServicesContent';
 import { PartnersContent } from './Components/Sections/PartnersContent';
@@ -30,7 +30,7 @@ export default class Template extends React.Component {
                     <Switch>
                         <Route exact path="/" component={DesktopContent} />
                         <Route path="/personal-area" component={PersonalAreaContent} />
-                        <Route path="/company" component={CompanyContent} />
+                        <Route path="/company" component={CompanyPage} />
                         <Route path="/contacts" component={ContactsContent} />
                         <Route path="/services" component={ServicesContent} />
                         <Route path="/partners" component={PartnersContent} />

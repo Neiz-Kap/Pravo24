@@ -29,6 +29,15 @@
     justify-content: space-evenly;
 }
 
+/* About company */
+.company-about_description{
+    max-width: 510px;
+}
+
+.company-about-video{
+    max-height: 100%;
+}
+
 
 
 .rewards{
@@ -41,36 +50,6 @@
     margin-top: 40px;
     width: 200px;
     margin-bottom: 39px;
-}
-
-.descr{
-    margin-top: 27px;
-    margin-bottom: 41px;
-    max-width: 100%;
-    text-align: center;
-}
-
-.description-below{
-    height: 33px;
-    font-weight: 600;
-    font-size: 24px;
-    line-height: 33px;
-}
-
-.descriptiona{
-    color: #DEA033;
-    font-family: 'Open Sans';
-    height: 33px;
-    font-weight: 600;
-    font-size: 24px;
-    line-height: 33px;
-}
-
-.letter{
-    position: relative;
-    bottom: 3px;
-    font-size: 24px;
-    color: black;
 }
 
 .tion{

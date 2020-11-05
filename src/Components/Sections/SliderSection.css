@@ -2,16 +2,22 @@
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    
 }
 
-.desktop-slider__item {
-    max-width: 197px;
+.desktop__item, .desktop-slider__item {
+    max-width: 200px;
     width: 100%;
     max-height: 181px;
     height: 100%;
     margin: 0 64px;
 }
+
+.desktop-slider .carousel-inner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 /* .clients-slider {
     display: flex;
     align-items: center;
