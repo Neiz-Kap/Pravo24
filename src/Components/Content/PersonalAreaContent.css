@@ -1,0 +1,135 @@
+.enter{
+    background: #F4F6F9;
+}
+
+label{
+    background: #F4F6F9;
+}
+
+.Personal{
+    height: 30px;
+    font-size: 28px;
+    color: #DEA033;
+}
+
+.enter-the-number{
+    width: 257px;
+    font-size: 20px;
+    line-height: 27px;
+    text-align: center
+}
+
+.phone-number{
+    width: 360px;
+    height: 44px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border:none;
+    border-radius: 4px;
+}
+
+input{
+    padding-left:10px;
+}
+
+
+.Password{
+    width: 500px;
+    height: 50px;
+    border-radius: 6px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border:none;
+}
+
+select{
+    max-width: 100%;
+    width: 123px;
+    height: 44px;
+    margin-right: 17px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border:none;
+    border-radius: 4px;
+}
+
+
+
+.button-enter{
+    width: 250px;
+    height: 40px;
+    background: #DEA033;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-left: 10px;
+    color: #FFFFFF;
+}
+
+.InputPassword1{
+    margin-top: 17px;
+    margin-bottom: 16px;
+}
+.remember{
+    height: 30px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.tick{
+    width: 12.5px;
+    height: 12.5px;
+    margin-left: 11px;
+    margin-right: 14px;
+        
+}
+
+.remember-tick{
+    height: 50px;
+    border: 1px solid #000000;
+    /* transform: rotate(90deg);  */
+}
+
+.remem-tick{
+    margin-top: 8px;
+}
+
+.entry-block{
+    margin-top: 118px;
+    background: #F4F6F9;
+}
+
+.all-unit{
+    margin-top: 72px;
+    background: #F4F6F9;
+}
+
+.dropdown{
+    background: #F4F6F9;
+}
+
+.Forget-account{
+    text-align: center;
+}
+
+
+/*  */
+/*  */
+/*  */
+/* регистрация */
+/*  */
+/*  */
+/*  */
+
+
+.block-registrations{
+    /* margin-bottom: 26px; */
+    background: #F4F6F9;
+}
+
+.dropdown1{
+    /* margin-bottom: 26px; */
+    background: #F4F6F9;
+}
+
+.register{
+    margin-top: 26px;
+    margin-bottom: 26px;
+}
