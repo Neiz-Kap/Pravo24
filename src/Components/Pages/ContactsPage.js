@@ -1,8 +1,8 @@
 import React from 'react';
-<<<<<<< HEAD:src/Components/Sections/ContactsContent.js
+
 import { Container, Card, Button, Form, ListGroup } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-import './ContactsContent.css';
+import './ContactsPage.css';
 
 import contact_background from '../../Image/contactsContent/modern-office-desktop.jpg'
 import lindekin from '../../Image/contactsContent/lindekin.svg'
@@ -10,7 +10,10 @@ import facebook from '../../Image/contactsContent/facebook.svg'
 import messages from '../../Image/contactsContent/messages.svg'
 import skype from '../../Image/contactsContent/skype.svg'
 
-export const ContactsContent = () => (
+import ApplicationSection from '../Sections/ApplicationSection';
+
+export const ContactsPage = () => {
+    return(
     <main>
         <section className="h-100vh-content">
             <Card className="text-white h-100">
@@ -72,10 +75,10 @@ export const ContactsContent = () => (
                 </ListGroup>
             </Container>
         </section>
+        <ApplicationSection/>
     </main>
-=======
+    );
+}
 
-export const ContactsContent = () => (
-    <h1 className="black">Это ContactsContent</h1>
->>>>>>> 89f2c77f211d77dcc25badc57ef218a062dc60d3:src/Components/Content/ContactsContent.jsx
-)
+
+

@@ -15,6 +15,7 @@ import work from '../../Image/companySection/work.svg';
 import video from '../../Image/desctopPage/video.jpg';
 
 import CallSection from '../Sections/CallSection';
+import ApplicationSection from '../Sections/ApplicationSection';
 import AwardsSlider from '../Sections/AwardsSlider';
 import ClientsSlider from '../Sections/ClientsSlider';
 
@@ -107,5 +108,6 @@ export const CompanyPage = () => (
     <AwardsSlider/>
     <ClientsSlider/>
     <CallSection />
+    <ApplicationSection/>
   </main>
 );

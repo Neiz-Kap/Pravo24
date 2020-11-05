@@ -14,22 +14,14 @@ import {
 } from 'react-router-dom';
 
 
-<<<<<<< HEAD
-import { DesktopContent } from './Components/Pages/DesktopPage';
-import { PersonalAreaContent } from './Components/Sections/PersonalAreaContent';
+
+import { DesktopPage } from './Components/Pages/DesktopPage';
 import { CompanyPage } from './Components/Pages/CompanyPage';
-import { ContactsContent } from './Components/Sections/ContactsContent';
-import { ServicesContent } from './Components/Sections/ServicesContent';
+import { ServicesPage } from './Components/Pages/ServicesPage';
+import { PasswordContent } from './Components/Sections/PasswordContent';
+import { PersonalAreaContent } from './Components/Sections/PersonalAreaContent';
+import { ContactsPage } from './Components/Pages/ContactsPage';
 import { PartnersContent } from './Components/Sections/PartnersContent';
-=======
-import { DesktopContent } from './Components/Content/DesktopContent';
-import { PersonalAreaContent } from './Components/Content/PersonalAreaContent';
-import { CompanyContent } from './Components/Content/CompanyContent';
-import { ContactsContent } from './Components/Content/ContactsContent';
-import { ServicesContent } from './Components/Content/ServicesContent';
-import { PartnersContent } from './Components/Content/PartnersContent';
-import { PasswordContent } from './Components/Content/PasswordContent';
->>>>>>> 89f2c77f211d77dcc25badc57ef218a062dc60d3
 
 export default class Template extends React.Component {
     render() {
@@ -38,11 +30,11 @@ export default class Template extends React.Component {
                 <Router>
                     <HeaderPage />
                     <Switch>
-                        <Route exact path="/" component={DesktopContent} />
+                        <Route exact path="/" component={DesktopPage} />
                         <Route path="/personal-area" component={PersonalAreaContent} />
                         <Route path="/company" component={CompanyPage} />
-                        <Route path="/contacts" component={ContactsContent} />
-                        <Route path="/services" component={ServicesContent} />
+                        <Route path="/contacts" component={ContactsPage} />
+                        <Route path="/services" component={ServicesPage} />
                         <Route path="/partners" component={PartnersContent} />
                         <Route path="/password" component={PasswordContent} />
                     </Switch>

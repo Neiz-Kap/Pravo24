@@ -10,6 +10,8 @@
     max-height: 181px;
     height: 100%;
     margin: 0 64px;
+    display: flex;
+    justify-content: center;
 }
 
 .desktop-slider .carousel-inner{

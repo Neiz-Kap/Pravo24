@@ -1,6 +1,6 @@
 import React from "react";
 import './PersonalAreaContent.css';
-import { Card, Nav, Button,  Col, Row, Form, Container, } from 'react-bootstrap';
+import { Card, Nav, Button, Form, Container, } from 'react-bootstrap';
 import { Link } from "react-router-dom";
 
 
