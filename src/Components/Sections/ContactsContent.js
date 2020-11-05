@@ -1,4 +1,5 @@
 import React from 'react';
+<<<<<<< HEAD:src/Components/Sections/ContactsContent.js
 import { Container, Card, Button, Form, ListGroup } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import './ContactsContent.css';
@@ -72,4 +73,9 @@ export const ContactsContent = () => (
             </Container>
         </section>
     </main>
+=======
+
+export const ContactsContent = () => (
+    <h1 className="black">Это ContactsContent</h1>
+>>>>>>> 89f2c77f211d77dcc25badc57ef218a062dc60d3:src/Components/Content/ContactsContent.jsx
 )

@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
 
+<<<<<<< HEAD
 /* regular */
 /* @font-face {
     font-family: 'San Francisco';
@@ -45,6 +45,9 @@
     font-style: normal;
 } */
 
+=======
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+>>>>>>> 89f2c77f211d77dcc25badc57ef218a062dc60d3
 * {
     font-family: 'Open Sans', sans-serif !important;
     font-weight: normal;
@@ -77,10 +80,16 @@ code {
     height: 100%;
 }
 
+/* .description-text {
+    font-size: 1.5vw;
+    line-height: 27px;
+    text-shadow: 0px 3px 4px rgba(0, 0, 0, 0.25);
+} */
+
 /* size */
-.h-100vh {
+.h-100vh{
     min-height: 100vh;
-    height: 100vh;
+    max-height: 100vh;
 }
 
 .h-100vh-content{
@@ -92,7 +101,7 @@ code {
 .black {
     color: #000000 !important;
 }
-
+ 
 .orange {
     color: #FB8902;
 }
@@ -101,7 +110,8 @@ code {
     color: #dea033;
 }
 
-.light-grey {
+.light-grey{
+>>>>>>> 89f2c77f211d77dcc25badc57ef218a062dc60d3
     color: #C4C4C4;
 }
 
@@ -152,9 +162,6 @@ code {
     top: 50%;
     transform: translateY(-50%);
 }
-
-/* 
- */
 
 .content-link {
     font-size: 12px !important;

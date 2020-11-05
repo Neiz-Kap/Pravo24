@@ -35,8 +35,8 @@ function FooterPage() {
                                 <Nav.Link>
                                     <Link to="/partners">Партнеры</Link>
                                 </Nav.Link>
-                                <p className="Gray" style={{ width: 280, height: 34, }}>Политика конфиденциальности <br /> Cookie Policy</p>
-                                <p className="Gray" style={{marginTop: 30}}>© 2012—2020 Все права защищены</p>
+                                <p className="footers-info">Политика конфиденциальности <br /> Cookie Policy</p>
+                                <p className="Gray">© 2012—2020 Все права защищены</p>
                             </Nav.Item>
                             {/* <Nav.Link>       */}
                             {/* <Link > */}
@@ -54,13 +54,13 @@ function FooterPage() {
                             <Button className="btn-warning" variant="primary" >Заказать звонок</Button>
                         </Nav> */}
                         <div className="footer-nav__right">
-                            <div className="d-flex justify-content-between" style={{ marginBottom: 85 }}>
-                                <img src={youtube} style={{ width: 30, height: 30 }} alt="youtube" />
-                                <img src={facebook} style={{ marginLeft: 68, width: 30, height: 30 }} alt="facebook" />
-                                <img src={instagram} style={{ marginLeft: 68, width: 30, height: 30 }} alt="instagram" />
+                            <div className="d-flex justify-content-between social-icons" >
+                                <img className="fa-youtube" src={youtube}  alt="youtube" />
+                                <img className="fa-facebook" src={facebook}  alt="facebook" />
+                                <img className="fa-instagram" src={instagram}  alt="instagram" />
                             </div>
                             <p className="footer-nav__right-description" >Данный сайт имеет исключительно информационное значение, не предназначен и не должен трактоваться как реклама юридических или иных услуг.</p>
-                            <p className="ml-auto" style={{ width: 146, height: 44, textAlign: "right" }}>This site is made by Miura.pro</p>
+                            <p className="ml-auto company" >This site is made by Miura.pro</p>
                         </div>
 
                         {/* </Navbar.Collapse> */}

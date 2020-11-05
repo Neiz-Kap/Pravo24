@@ -44,7 +44,49 @@ footer *{
     width: 250px;
 }
 
-.Gray{
+/* соц. иконки */
+
+.social-icons{
+    margin-Bottom: 85px;
+}
+
+.fa-youtube{
+    width: 30px; 
+    height: 30px;
+}
+
+.fa-facebook{
+    margin-Left: 68px;
+    width: 30px; 
+    height: 30px;
+}
+
+.fa-instagram{
+    margin-left: 68px;
+    width: 30px;
+    height: 30px;
+}
+
+/* создани компания */
+
+.company{
+    width: 146px;
+    height: 44px;
+    text-align: right; 
+}
+
+/* левый угол footer */
+
+.footers-info{
+    width: 280px;
+    height: 34px;
     color: #C4C4C4;
     margin-left: 8px;
 }
+
+.Gray{
+    margin-top: 30px;
+    color: #C4C4C4;
+    margin-left: 8px;
+}
+
