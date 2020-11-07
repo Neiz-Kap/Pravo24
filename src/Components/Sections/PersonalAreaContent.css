@@ -13,11 +13,14 @@ label{
 }
 
 .enter-the-number{
-    width: 257px;
+    width: 256px;
     font-size: 20px;
     line-height: 27px;
-    text-align: center
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 }
+
 
 .phone-number{
     width: 360px;
@@ -109,6 +112,9 @@ select{
     text-align: center;
 }
 
+.No-account{
+    margin-bottom: 77px;
+}
 
 /*  */
 /*  */
@@ -127,9 +133,54 @@ select{
 .dropdown1{
     /* margin-bottom: 26px; */
     background: #F4F6F9;
+    margin-top: 71px;
 }
 
 .register{
     margin-top: 26px;
     margin-bottom: 26px;
+}
+
+
+/*  */
+/*  */
+/*  */
+/* Забыли пароль ввод номера телефона */
+
+.all-unit1{
+    margin-top: 72px;
+    margin-bottom: 218px;
+    background: #F4F6F9;
+}
+
+.dropdown2{
+    margin-top: 123px;
+    margin-bottom: 132px;
+    background: #F4F6F9;
+}
+
+.password-recovery{
+    max-width: 100%;
+    text-align: center;
+}
+
+.No-account1{
+    color: #FFFFFF;
+}
+
+/* Введение код */
+
+.button-to-send{
+    width: 250px;
+    height: 40px;
+    background: #DEA033;
+    border-radius: 10px;
+    margin-top: 10px;
+    color: #FFFFFF;
+}
+
+/* новый пароль  */
+
+.enter-the-password{
+    margin-bottom: 31px;
 }

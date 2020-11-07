@@ -43,7 +43,7 @@ export const PersonalAreaContent = () => {
                     </Card>
                     <Card className="d-flex justify-content-center Forget-account dropdown">
                         <Nav.Link>
-                        <Link className="Forget-password">
+                        <Link className="Forget-password" to="/recovery">
                             Забыли пароль?
                         </Link>
                         </Nav.Link>

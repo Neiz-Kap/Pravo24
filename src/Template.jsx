@@ -22,6 +22,10 @@ import { PasswordContent } from './Components/Sections/PasswordContent';
 import { PersonalAreaContent } from './Components/Sections/PersonalAreaContent';
 import { ContactsPage } from './Components/Pages/ContactsPage';
 import { PartnersContent } from './Components/Sections/PartnersContent';
+import { PasswordRecoveryContent } from './Components/Sections/PasswordRecoveryContent';
+import { EnterTheCodeContent } from './Components/Sections/EnterTheCodeContent'
+import { RecoveryPasswordContent } from './Components/Sections/RecoveryPasswordContent' 
+
 
 export default class Template extends React.Component {
     render() {
@@ -37,6 +41,9 @@ export default class Template extends React.Component {
                         <Route path="/services" component={ServicesPage} />
                         <Route path="/partners" component={PartnersContent} />
                         <Route path="/password" component={PasswordContent} />
+                        <Route path="/recovery" component={PasswordRecoveryContent} />
+                        <Route path="/code" component={EnterTheCodeContent} />
+                        <Route path="/recopass" component={RecoveryPasswordContent} />
                     </Switch>
                     <FooterPage />
                 </Router>

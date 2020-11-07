@@ -47,7 +47,11 @@ export const PasswordContent = () => (
                         <input className="phone-number" type="" placeholder="000-0000"/>
                     </div>
                     <div className="d-flex justify-content-center register">
-                        <button className="button-enter">Регистрация</button>
+                        <button className="button-enter">
+                            <Link className="No-account1" to="/personal-area" >
+                                Регистрация
+                            </Link>
+                        </button>
                     </div>
                 </Card>
             </Card>
