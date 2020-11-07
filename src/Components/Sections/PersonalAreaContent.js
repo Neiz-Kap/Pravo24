@@ -38,7 +38,11 @@ export const PersonalAreaContent = () => {
                                 </div>
                                 <div className="remember-tick" />
                             </div>
-                            <button className="button-enter">Войти</button>
+                            <button className="button-enter">
+                            <Link className="No-account1" to="/">
+                                Войти
+                            </Link>
+                            </button>
                         </div>
                     </Card>
                     <Card className="d-flex justify-content-center Forget-account dropdown">

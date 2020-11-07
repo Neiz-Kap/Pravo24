@@ -19,7 +19,7 @@ export const EnterTheCodeContent = () => (
                     </div>
                     <div className="d-flex d-flex justify-content-between register">
                         <button className="button-to-send">
-                            <Link className="No-account1" to="/" >
+                            <Link className="No-account1" to="/recovery" >
                             Отправить повторно 
                             </Link>
                         </button>
