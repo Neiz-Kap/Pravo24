@@ -52,7 +52,7 @@ export const PersonalAreaContent = () => {
                         </Link>
                         </Nav.Link>
                         <Nav.Link>
-                        <Link className="No-account" to="/password" >
+                        <Link className="No-account" to="/signUp" >
                             Нет аккаунта?
                         </Link>
                         </Nav.Link>

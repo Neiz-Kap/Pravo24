@@ -80,6 +80,10 @@ code {
     height: 100%;
 }
 
+label{
+    cursor: default;
+}
+
 /* .description-text {
     font-size: 1.5vw;
     line-height: 27px;

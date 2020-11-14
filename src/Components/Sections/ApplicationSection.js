@@ -5,7 +5,7 @@ import './CallSection.css';
 import google_play from '../../Image/applicationSection/google_play.jpg';
 import app_store from '../../Image/applicationSection/app_store.jpg';
 
-function ApplicationSection() {
+const ApplicationSection = () => {
     return (
         <section className="mb-5">
             <h2 className="content__title--color-satingold text-center">Приложение на смартфон</h2>

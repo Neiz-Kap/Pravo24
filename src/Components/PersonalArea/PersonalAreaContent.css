@@ -133,7 +133,7 @@ select{
 .dropdown1{
     /* margin-bottom: 26px; */
     background: #F4F6F9;
-    margin-top: 71px;
+    /* margin-top: 71px; */
 }
 
 .register{
@@ -162,10 +162,6 @@ select{
 .password-recovery{
     max-width: 100%;
     text-align: center;
-}
-
-.No-account1{
-    color: #FFFFFF;
 }
 
 /* Введение код */

@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 
 export const PasswordRecoveryContent = () => (
 
+
 <section className="dropdown1">
         <Container className="d-flex justify-content-between block-recovery">
             <Card className="all-unit1">
