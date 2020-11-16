@@ -18,7 +18,7 @@ import { CompanyPage } from './Components/Pages/CompanyPage';
 import { ServicesPage } from './Components/Pages/ServicesPage';
 import { ContactsPage } from './Components/Pages/ContactsPage';
 import { PartnersContent } from './Components/Sections/PartnersContent';
-import { PersonalAreaContent } from './Components/PersonalArea/PersonalAreaContent';
+import PersonalAreaContent from './Components/PersonalArea/PersonalAreaContent';
 
 import SignUp from './Components/PersonalArea/SignUp';
 import { PasswordRecoveryContent } from './Components/PersonalArea/PasswordRecoveryContent';

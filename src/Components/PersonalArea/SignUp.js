@@ -19,56 +19,54 @@ export default class SignUp extends React.Component {
             // isLoaded: false,
             // items: [],
 
-            // firstName: "Андрей",
-            // lastName: "Титаренко",
-            // middleName: "Евгеньевич",
-            // phone_number: "+380667164052",
-            // password: "123456",
-            // password_confirm: "123456"
-
-            firstName: "",
-            lastName: "",
-            middleName: "",
-            phone_number: "",
-            password: "",
-            password_confirm: ""
+            error: "",
+            form: {
+                firstName: "",
+                lastName: "",
+                middleName: "",
+                password: "",
+                phoneCode: "+7",
+                phone: "",
+                password_confirm: "",
+            },
         };
         this.handleInputChange = this.handleInputChange.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
     }
 
-    loadSignUpData = async () => {
+    get phoneNumber() {
+        return this.state.form.phoneCode + this.state.form.phone;
+    }
+
+    loadSignUpData = (event) => {
+        event.preventDefault();
+        // console.log({ phone_number: this.phoneNumber, ...this.state.form})
+
         let urlRegister = 'http://pravo.loc/api/register.php';
-        let response = fetch(urlRegister, {
+        fetch(urlRegister, {
             method: 'POST',
             header: { 'Content-Type': 'application/json;charset=utf-8' },
-            body: JSON.stringify(this.state),
-        });
-
-        let result = response.json();
-        alert(result.message);
+            body: JSON.stringify({ phone_number: this.phoneNumber, ...this.state.form}),
+        }).then((result) => {
+            result.json().then((data) => {
+                // Регистрация успешна
+                console.log(data);
+            })
+        }).catch((err) => {
+            // {"status": "error", "message": "asddawdawdawasd"}
+            console.error(err);
+        })
     }
 
     handleInputChange(event){
-        // console.log(`Метод hanldeInputChange() сработал. Result: ${event.target.value}`);
-        this.setState({firstName: event.target.value})
-        const input = event.target.elements.firstName.value;
-        console.log(input);
+        console.log(`Метод hanldeInputChange() сработал. Result: ${[event.target.name]}:${event.target.value}`);
+        const form = this.state.form;
+        form[event.target.name] = event.target.value;
+        this.setState({ ...this.state, form });
     }
     handleSubmit(event){
         event.preventDefault();
         console.log(`Метод handleSubmit() сработал.`);
-    }
-    handleTelephoneChange(event){
-        console.log(`Метод hanldeInputChange() сработал. Result: ${this}`);
-
-        // this.setState({phone_number: handleTelephoneCodeChange(event) + event.target.value})
-    }
-
-    handleTelephoneCodeChange(event){
-        if(event.target.value == "rus")
-        return "+7";
-        return "+380";
     }
 
     render() {
@@ -80,7 +78,7 @@ export default class SignUp extends React.Component {
                         <h2 className="Personal">Создание аккаунта</h2>
                         <p className="enter-the-number">Пожалуйста, заполните поля для регистрации</p>
                     </Card>
-                    <Form className="entry-block" onSubmit={this.handleSubmit}>
+                    <Form className="entry-block" action="/personal-area" onSubmit={this.handleSubmit}>
                         <Form.Group className="Password1 dropdown">
                             <Form.Label>Имя</Form.Label>
                             <Form.Control 
@@ -114,10 +112,6 @@ export default class SignUp extends React.Component {
                             onChange={this.handleInputChange}
                             />
                         </Form.Group>
-                        {/* <Form.Group className="Password1 dropdown">
-                            <Form.Label>Email(необязательно)</Form.Label>
-                            <Form.Control className="Password" name="" type="email" placeholder="" />
-                        </Form.Group> */}
                         <Form.Group className="Password1 dropdown">
                             <Form.Label>Пароль</Form.Label>
                             <Form.Control
@@ -126,6 +120,7 @@ export default class SignUp extends React.Component {
                             type="password" 
                             placeholder="" 
                             value={this.state.password}
+                            onChange={this.handleInputChange}
                             />
                         </Form.Group>
                         <Form.Group className="Password1 dropdown">
@@ -142,26 +137,25 @@ export default class SignUp extends React.Component {
                         <Form.Group className="dropdown">
                             <Form.Label>Номер телефона</Form.Label>
                             <div className="d-flex justify-content-start">
-                                <select>
+                                <select name="phoneCode" onChange={this.handleInputChange}>
                                     <option
                                     className="dropdown-str" 
-                                    value="rus"
-                                    onChange={this.handleTelephoneCodeChange}
+                                    value="+7"
                                     >RUS: +7</option>
                                     <option 
                                     className="dropdown-str" 
-                                    value="ua"
-                                    onChange={this.handleTelephoneCodeChange}
+                                    value="+380"
                                     >UA: +380</option>
                                 </select>
                                 <Form.Control 
                                 className="phone-number" 
+                                name="phone"
                                 type="text" 
                                 placeholder="000-0000"
-                                onChange={this.handleTelephoneChange} />
+                                onChange={this.handleInputChange} />
                             </div>
                             <div className="d-flex justify-content-center register">
-                                <Button className="button-enter" type="submit">
+                                <Button onClick={this.loadSignUpData} className="button-enter" type="submit">
                                     Регистрация
                                     {/* to="/personal-area" */}
                                 </Button>
