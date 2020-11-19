@@ -1,5 +1,5 @@
 import React from "react";
-import { Card, Container } from 'react-bootstrap';
+import { Container, Card, Breadcrumb } from 'react-bootstrap';
 import { Link } from "react-router-dom";
 import './CompanyPage.css'
 
@@ -25,8 +25,12 @@ export const CompanyPage = () => (
       <Card className="text-white h-100">
         <Card.Img src={company_background} alt="Card image" />
         <Card.ImgOverlay>
-          <Container className="position-relative w-100 h-100">
-            <Card.Title className="content-link d-flex"><Link to="/">Главная</Link>/Компания</Card.Title>
+          <Container fluid className="position-relative w-100 h-100">
+            {/* <Card.Title className="content-link d-flex"><Link to="/">Главная</Link>/Компания</Card.Title> */}
+            <Breadcrumb>
+              <Breadcrumb.Item className="content-link" href="/">Главная</Breadcrumb.Item>
+              <Breadcrumb.Item className="content-link" active>Компания</Breadcrumb.Item>
+            </Breadcrumb>
             <div className="position-absolute t-40">
               <Card.Title className="contacts-content__title company-content__title satin-sheen-gold">Ваш бизнес. Наши заботы</Card.Title>
               <p className="legal-description">
@@ -105,9 +109,9 @@ export const CompanyPage = () => (
         </div>
       </Container>
     </section>
-    <AwardsSlider/>
-    <ClientsSlider/>
+    <AwardsSlider />
+    <ClientsSlider />
     <CallSection />
-    <ApplicationSection/>
+    <ApplicationSection />
   </main>
 );

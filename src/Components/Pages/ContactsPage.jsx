@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Container, Card, Button, Form, ListGroup } from 'react-bootstrap';
+import { Container, Card, Button, Form, ListGroup, Breadcrumb } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import './ContactsPage.css';
 
@@ -19,8 +19,11 @@ export const ContactsPage = () => {
             <Card className="text-white h-100">
                 <Card.Img src={contact_background} alt="Card image" />
                 <Card.ImgOverlay>
-                    <Container className="position-relative w-100 h-100">
-                        <Card.Title className="content-link d-flex"><Link to="/">Главная</Link>/Контакты</Card.Title>
+                    <Container fluid className="position-relative w-100 h-100">
+                        <Breadcrumb>
+                            <Breadcrumb.Item className="content-link" href="/">Главная</Breadcrumb.Item>
+                            <Breadcrumb.Item className="content-link" active>Контакты</Breadcrumb.Item>
+                        </Breadcrumb>
                         <Card.Title className="contacts-content__title d-flex align-items-center position-absolute t-50">Контактная <br /> информация</Card.Title>
                     </Container>
                 </Card.ImgOverlay>

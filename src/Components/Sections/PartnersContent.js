@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Card, Image } from 'react-bootstrap';
+import { Container, Card, Image, Breadcrumb } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import './PartnersContent.css';
 
@@ -20,7 +20,10 @@ export const PartnersContent = () => {
     <main>
         <section className="background--color-light-blackhaze ">
             <Container className="position-relative pv-70px">
-                <Card.Title className="content-link black d-flex"><Link to="/">Главная</Link>/Наши партнёры</Card.Title>
+                <Breadcrumb>
+                    <Breadcrumb.Item className="content-link black" href="/">Главная</Breadcrumb.Item>
+                    <Breadcrumb.Item className="content-link" active>Контакты</Breadcrumb.Item>
+                </Breadcrumb>
                 <h2 className="content__title--color-satingold">Наши услуги</h2>
                 <Card.Body className="partners-block d-flex justify-content-between flex-wrap">
                     {/* Card.partners__item.d-flex.justify-content-center.align-items-center*12>Image/ */}

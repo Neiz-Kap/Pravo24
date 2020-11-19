@@ -35,8 +35,8 @@ export const DesktopPage = () => {
                     <Card.ImgOverlay>
                         <Card.Body className="position-relative w-100 h-100">
                             <Card.Body className="h-100 d-flex flex-column align-items-center justify-content-center">
-                                <Card.Title className="text-center">Право24</Card.Title>
-                                <Button className="header-btn" variant="warning">Бесплатная консультация</Button>
+                                <Card.Title className="text-center desktop-content-title">Право<span>24</span></Card.Title>
+                                <Button className="header-btn desktop-content-btn" variant="warning">Бесплатная консультация</Button>
                             </Card.Body>
                             <Row className="position-absolute fixed-bottom desktop-content-table">
                                 <Col className="desktop-content-table__item">

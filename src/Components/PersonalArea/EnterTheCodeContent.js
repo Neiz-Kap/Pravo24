@@ -5,35 +5,35 @@ import { Link } from "react-router-dom";
 
 
 export const EnterTheCodeContent = () => (
-
-<section className="dropdown1">
-        <Container className="d-flex justify-content-between block-recovery">
-            <Card className="all-unit1">
-                <h1 className="Personal">Восстановление пароля</h1>
-                <p className="enter-the-number password-recovery">Пожалуйста,введите код отправленный на ваш номер</p>
-            </Card>
-                <Card className="dropdown2">
-                    <label>Введите код</label>
-                    <div className="d-flex justify-content-start">
-                        <input className="Password" type=""  placeholder=""/>
-                    </div>
-                    <div className="d-flex d-flex justify-content-between register">
-                        <button className="button-to-send">
-                            <Link className="No-account1" to="/recovery" >
-                            Отправить повторно 
-                            </Link>
-                        </button>
-                        <button className="button-enter">
-                            <Link className="No-account1" to="/recopass" >
-                                Подтвердить
-                            </Link>
-                        </button>
-                    </div>
-                    <Link className="No-account d-flex justify-content-center" to="/recovery" >
-                        Не приходит код ?
-                    </Link>
+    <main>
+        <section className="dropdown1">
+            <Container className="d-flex justify-content-between block-recovery">
+                <Card className="all-unit1">
+                    <h1 className="Personal">Восстановление пароля</h1>
+                    <p className="enter-the-number password-recovery">Пожалуйста,введите код отправленный на ваш номер</p>
                 </Card>
-        </Container>
-    </section>
-
+                <Form className="dropdown2">
+                    <Form.Group>
+                        <Form.Label>Введите код</Form.Label>
+                        <Form.Control className="Password" type=""  placeholder=""/>
+                    </Form.Group>
+                    <Form.Group>
+                        <div className="d-flex d-flex justify-content-between register">
+                            <Button className="button-to-send">
+                                <Link className="No-account1" to="/recovery" >
+                                Отправить повторно 
+                                </Link>
+                            </Button>
+                            <Button className="button-enter No-account1">
+                                <Link to="/recopass">Подтвердить</Link>
+                            </Button>
+                        </div>
+                        <Link className="No-account d-flex justify-content-center" to="/recovery" >
+                            Не приходит код?
+                        </Link>
+                    </Form.Group>
+                </Form>
+            </Container>
+        </section>
+    </main>
 );

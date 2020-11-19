@@ -10,6 +10,9 @@ import {
     Link
 } from "react-router-dom";
 
+import {rus_flag} from '../../Image/PersonalAreaContent/rus-flag.svg'
+import {ua_flag} from '../../Image/PersonalAreaContent/ua-flag.svg'
+
 export default class SignUp extends React.Component {
     constructor(props) {
         super(props);
@@ -59,14 +62,14 @@ export default class SignUp extends React.Component {
     }
 
     handleInputChange(event){
-        console.log(`Метод hanldeInputChange() сработал. Result: ${[event.target.name]}:${event.target.value}`);
+        // console.log(`Метод hanldeInputChange() сработал. Result: ${[event.target.name]}:${event.target.value}`);
         const form = this.state.form;
         form[event.target.name] = event.target.value;
         this.setState({ ...this.state, form });
     }
     handleSubmit(event){
         event.preventDefault();
-        console.log(`Метод handleSubmit() сработал.`);
+        // console.log(`Метод handleSubmit() сработал.`);
     }
 
     render() {
@@ -141,11 +144,11 @@ export default class SignUp extends React.Component {
                                     <option
                                     className="dropdown-str" 
                                     value="+7"
-                                    >RUS: +7</option>
+                                    ><img src={rus_flag} alt="RUS"/> +7</option>
                                     <option 
                                     className="dropdown-str" 
                                     value="+380"
-                                    >UA: +380</option>
+                                    ><img src={ua_flag} alt="UA"/> +380</option>
                                 </select>
                                 <Form.Control 
                                 className="phone-number" 
