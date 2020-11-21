@@ -35,8 +35,8 @@
 .map {
     width: 292px;
     height: 280px;
-    background: #ffffff;
-    border-radius: 12px;
+    background-color: #FFFFFF;
+    border-radius: 12px !important;
     text-align: center;
 }
 

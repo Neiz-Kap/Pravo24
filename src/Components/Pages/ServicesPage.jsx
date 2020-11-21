@@ -1,5 +1,5 @@
 import React from "react";
-import { Container } from 'react-bootstrap';
+import { Container, Card } from 'react-bootstrap';
 import './ServicesPage.css';
 import { Link } from "react-router-dom";
 
@@ -28,38 +28,38 @@ export const ServicesPage = () => {
                     </p>
                     </div>
                     <div className="maps">
-                        <div className="map">
+                        <Card className="map">
                             <img className="fa-Group" src={services_icon_1} alt="Group" />
                             <p className="Statement-cancellation">Заявление о расторжении брака в судебном порядке</p>
                             <Link to="" className="services__item-link">Подробнее</Link>
-                        </div>
-                        <div className="map">
+                        </Card>
+                        <Card className="map">
                             <img className="fa-Vector" src={services_icon_2} alt="Vector" />
                             <p className="Statement-extraditions">Заявление на выдачу судебного приказа на взыскание алиментов на содержание детей</p>
                             <Link to="" className="services__item-link">Подробнее</Link>
-                        </div>
-                        <div className="map">
+                        </Card>
+                        <Card className="map">
                             <img className="fa-inheritance" src={services_icon_3} alt="inheritance" />
                             <p className="Statement-establishments">Заявление об установлении факта принятия наследства.</p>
                             <Link to="" className="services__item-link">Подробнее</Link>
-                        </div>
+                        </Card>
                     </div>
                     <div className="maps">
-                        <div className="map">
+                        <Card className="map">
                             <img className="fa-contract" src={services_icon_4} alt="contract" />
                             <p className="Development">Разработка проекта договора</p>
                             <Link to="" className="services__item-link">Подробнее</Link>
-                        </div>
-                        <div className="map">
+                        </Card>
+                        <Card className="map">
                             <img className="fa-Group1" src={services_icon_5} alt="Group1" />
                             <p className="claim">Подготовка претензий</p>
                             <Link to="" className="services__item-link">Подробнее</Link>
-                        </div>
-                        <div className="map">
+                        </Card>
+                        <Card className="map">
                             <img className="fa-Group2" src={services_icon_6} alt="Group2" />
                             <p className="Conduction">Ведение договорной работы</p>
                             <Link to="" className="services__item-link">Подробнее</Link>
-                        </div>
+                        </Card>
                     </div>
                 </Container>
             </section>

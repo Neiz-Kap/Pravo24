@@ -8,6 +8,10 @@ header {
     z-index: 9999;
 }
 
+.header-navbar {
+    position: relative;
+}
+
 /* Header right */
 .header-logo {
     width: 86px;
@@ -58,4 +62,58 @@ header {
 .header-btn:active,
 .header-btn:focus {
     color: #FFFFFF !important;
+}
+
+/* 
+
+ Sidebar styles
+
+*/
+
+.sidebar {
+    background-color: #fff;
+    border-radius: 8px;
+    position: absolute;
+    right: 0;
+    bottom: -375%;
+}
+
+header .sidebar-wrapper {
+    padding-top: 34px;
+    padding-bottom: 34px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+header .sidebar-wrapper {}
+
+.sidebar-wrapper > .nav-link{
+    margin-bottom: 44px;
+}
+
+.sidebar-wrapper > .nav-link:last-child{
+    margin-bottom: 0;
+}
+
+.sidebar-icon{
+    filter: grayscale(100%);
+}
+
+.sidebar-icon:hover, .sidebar-icon:focus{
+    filter: grayscale(0);
+}
+
+.sidebar-chats-number {
+    width: 18px;
+    height: 18px;
+    background-color: #DEA033;
+    border-radius: 50%;
+    color: #FFFFFF;
+    font-size: 14px;
+    line-height: calc(17 / 14);
+    text-align: center;
+    position: absolute;
+    top: 9%;
+    right: 22%;
 }

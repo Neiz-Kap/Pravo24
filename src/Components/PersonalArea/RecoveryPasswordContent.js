@@ -25,7 +25,7 @@ export const RecoveryPasswordContent = () => (
                         </div>
                         <div className="d-flex d-flex justify-content-between register">
                             <button className="button-enter">
-                                <Link className="No-account1" to="/personal-area" >
+                                <Link className="No-account1" to="/personalArea" >
                                     Подтвердить
                                 </Link>
                             </button>

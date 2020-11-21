@@ -30,7 +30,7 @@ function FooterPage() {
                                     <Link to="/contacts">Контакты</Link>
                                 </Nav.Link>
                                 <Nav.Link>
-                                    <Link to="/personal-area">Личный кабинет</Link>
+                                    <Link to="/personalArea">Личный кабинет</Link>
                                 </Nav.Link>
                                 <Nav.Link>
                                     <Link to="/partners">Партнеры</Link>

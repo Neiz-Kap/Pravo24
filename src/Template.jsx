@@ -21,19 +21,24 @@ import { PartnersContent } from './Components/Sections/PartnersContent';
 import PersonalAreaContent from './Components/PersonalArea/PersonalAreaContent';
 
 import SignUp from './Components/PersonalArea/SignUp';
+import SignIn from './Components/PersonalArea/SignIn';
 import { PasswordRecoveryContent } from './Components/PersonalArea/PasswordRecoveryContent';
 import { EnterTheCodeContent } from './Components/PersonalArea/EnterTheCodeContent';
 import { RecoveryPasswordContent } from './Components/PersonalArea/RecoveryPasswordContent';
 
-import { SideBar } from './Components/Sections/SideBar';
+import Chats from './Components/PersonalArea/PrivateOfficeContent/Chats';
+
+import NotFound from './Components/Sections/Basic/NotFound';
+
+// import { Sidebar } from './Components/Sections/SideBar';
 
 export default class Template extends React.Component {
     constructor(props){
         super(props);
 
-        this.state = {
-            numberMessages: "6",
-        }
+        // this.state = {
+        //     numberMessages: "6",
+        // }
     }
 
     render() {
@@ -43,18 +48,22 @@ export default class Template extends React.Component {
                     <HeaderPage />
                     <Switch>
                         <Route exact path="/" component={DesktopPage} />
-                        <Route path="/personal-area" component={PersonalAreaContent} />
+                        <Route path="/personalArea" component={PersonalAreaContent} />
                         <Route path="/company" component={CompanyPage} />
                         <Route path="/contacts" component={ContactsPage} />
                         <Route path="/services" component={ServicesPage} />
                         <Route path="/partners" component={PartnersContent} />
 
                         <Route path="/signUp" component={SignUp} />
+                        <Route path="/signIn" component={SignIn} />
                         <Route path="/recovery" component={PasswordRecoveryContent} />
                         <Route path="/code" component={EnterTheCodeContent} />
                         <Route path="/recopass" component={RecoveryPasswordContent} />
+                        
+                        <Route path="/chat" component={Chats} />
 
-                        <SideBar numberMessages={this.state.numberMessages}/>
+                        <Route component={ NotFound } />
+                        {/* <SideBar numberMessages={this.state.numberMessages}/> */}
                     </Switch>
                     <FooterPage />
                 </Router>

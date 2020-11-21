@@ -81,7 +81,7 @@ export default class SignUp extends React.Component {
                         <h2 className="Personal">Создание аккаунта</h2>
                         <p className="enter-the-number">Пожалуйста, заполните поля для регистрации</p>
                     </Card>
-                    <Form className="entry-block" action="/personal-area" onSubmit={this.handleSubmit}>
+                    <Form className="entry-block" action="/personalArea" onSubmit={this.handleSubmit}>
                         <Form.Group className="Password1 dropdown">
                             <Form.Label>Имя</Form.Label>
                             <Form.Control 
@@ -160,7 +160,7 @@ export default class SignUp extends React.Component {
                             <div className="d-flex justify-content-center register">
                                 <Button onClick={this.loadSignUpData} className="button-enter" type="submit">
                                     Регистрация
-                                    {/* to="/personal-area" */}
+                                    {/* to="/personalArea" */}
                                 </Button>
                             </div>
                         </Form.Group>
