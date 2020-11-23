@@ -65,7 +65,8 @@ body {
 
 main {
     /* padding-top: 95px; */
-    padding-top: 110px;
+    padding-top: 102px;
+    /* padding-top: 110px; */
 }
 
 code {
@@ -87,16 +88,32 @@ code {
     background-color: transparent !important;
 }
 
-.btn-warning{
-    color: #FFFFFF !important;
-    filter: drop-shadow(0px 0px 8px #DEA033);
+.btn-primary, .btn-warning{
+    
 }
 
 .card{
     background-color: transparent;
 }
 
-/*  */
+.btn-primary, .btn-warning{
+    color: #FFFFFF !important;
+    filter: drop-shadow(0px 0px 8px #DEA033);
+    background-color: var(--moderate-yellow) !important;
+    border-color:var(--moderate-yellow) !important;
+}
+
+.btn-primary:hover, .btn-warning:hover,
+.btn-primary:focus, .btn-warning:focus{
+    background-color: #e0a800 !important;
+    border-color: #d39e00 !important;
+   
+}
+
+.btn-primary:focus, .btn-warning:focus{
+    box-shadow: 0 0 0 0.2rem rgba(222,170,12,.5) !important;
+}
+/* 
 .desktop-content-title {
     font-size: 37px !important;
     line-height: 50px !important;

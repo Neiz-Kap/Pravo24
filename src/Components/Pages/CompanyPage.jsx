@@ -19,7 +19,7 @@ import ApplicationSection from '../Sections/ApplicationSection';
 import AwardsSlider from '../Sections/AwardsSlider';
 import ClientsSlider from '../Sections/ClientsSlider';
 
-export const CompanyPage = () => (
+const CompanyPage = () => (
   <main>
     <section className="h-100vh-content">
       <Card className="text-white h-100">
@@ -115,3 +115,5 @@ export const CompanyPage = () => (
     <ApplicationSection />
   </main>
 );
+
+export default CompanyPage;

@@ -7,26 +7,26 @@ import {
     BrowserRouter as Router,
     Switch,
     Route,
-    Link
 } from 'react-router-dom';
 
 import HeaderPage from './Components/Pages/HeaderPage';
 import FooterPage from './Components/Pages/FooterPage';
 
-import { DesktopPage } from './Components/Pages/DesktopPage';
-import { CompanyPage } from './Components/Pages/CompanyPage';
+import DesktopPage from './Components/Pages/DesktopPage';
+import CompanyPage from './Components/Pages/CompanyPage';
 import { ServicesPage } from './Components/Pages/ServicesPage';
 import { ContactsPage } from './Components/Pages/ContactsPage';
 import { PartnersContent } from './Components/Sections/PartnersContent';
-import PersonalAreaContent from './Components/PersonalArea/PersonalAreaContent';
 
-import SignUp from './Components/PersonalArea/SignUp';
-import SignIn from './Components/PersonalArea/SignIn';
-import { PasswordRecoveryContent } from './Components/PersonalArea/PasswordRecoveryContent';
-import { EnterTheCodeContent } from './Components/PersonalArea/EnterTheCodeContent';
-import { RecoveryPasswordContent } from './Components/PersonalArea/RecoveryPasswordContent';
+import PersonalAreaContent from './Components/PersonalArea/PersonalAreaContent';
+import SignIn from './Components/PersonalArea/Form/SignIn';
+import SignUp from './Components/PersonalArea/Form/SignUp';
+import ResetPassPhone from './Components/PersonalArea/Form/RecoveryPassPhone';
+import RecoveryPassCode from './Components/PersonalArea/Form/RecoveryPassCode';
+import ResetPassword from './Components/PersonalArea/Form/ResetPassword';
 
 import Chats from './Components/PersonalArea/PrivateOfficeContent/Chats';
+
 
 import NotFound from './Components/Sections/Basic/NotFound';
 
@@ -56,9 +56,9 @@ export default class Template extends React.Component {
 
                         <Route path="/signUp" component={SignUp} />
                         <Route path="/signIn" component={SignIn} />
-                        <Route path="/recovery" component={PasswordRecoveryContent} />
-                        <Route path="/code" component={EnterTheCodeContent} />
-                        <Route path="/recopass" component={RecoveryPasswordContent} />
+                        <Route path="/recoveryPhone" component={ResetPassPhone} />
+                        <Route path="/recoveryCode" component={RecoveryPassCode} />
+                        <Route path="/resetPassword" component={ResetPassword} />
                         
                         <Route path="/chat" component={Chats} />
 

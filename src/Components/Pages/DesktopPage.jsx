@@ -26,7 +26,7 @@ import ClientsSlider from '../Sections/ClientsSlider';
 import AwardsSlider from '../Sections/AwardsSlider';
 import ApplicationSection from '../Sections/ApplicationSection';
 
-export const DesktopPage = () => {
+const DesktopPage = () => {
     return (
         <main>
             <section className="h-100vh-content">
@@ -184,3 +184,5 @@ export const DesktopPage = () => {
         </main>
     );
 }
+
+export default DesktopPage;

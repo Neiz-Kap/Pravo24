@@ -126,13 +126,17 @@ export default class PersonalAreaContent extends Component {
                                             />
                                         </div>
                                     </Form.Group>
-                                    <Form.Group className="d-flex justify-content-between">
-                                        <Button className="office-avatar-edit btn-warning" variant="primary">Сменить пароль</Button>
-                                        <Button className="office-avatar-edit btn-warning" variant="primary">Выйти из аккаунта</Button>
-                                    </Form.Group>
+                                    <Form.Row>
+                                        <Col>
+                                            <Button className="office-avatar-edit btn-warning mr-3" variant="primary">Сменить пароль</Button>
+                                        </Col>
+                                        <Col>
+                                            <Button className="office-avatar-edit btn-warning" variant="primary">Выйти из аккаунта</Button>
+                                        </Col>
+                                    </Form.Row>
                                 </Form>
                             </Col>
-                            <Col></Col>
+                            <Col className="col--number-third"></Col>
                         </Row>
                     </Container>
                 </section>
