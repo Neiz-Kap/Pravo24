@@ -1,0 +1,212 @@
+/*
+
+ Sidebar styles
+
+*/
+
+.sidebar {
+    background-color: #fff;
+    border-radius: 8px;
+    position: fixed;
+    top: 110px;
+    right: 0;
+    z-index: 9;
+}
+
+.sidebar-wrapper {
+    padding-top: 34px;
+    padding-bottom: 34px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar-wrapper>.nav-link {
+    margin-bottom: 44px;
+}
+
+.sidebar-wrapper>.nav-link:last-child {
+    margin-bottom: 0;
+}
+
+.sidebar-icon {
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+
+.sidebar-icon:hover,
+.sidebar-icon:focus {
+    -webkit-filter: grayscale(0);
+    filter: grayscale(0);
+}
+
+/* Количество сообщений */
+.sidebar-chats-number {
+    width: 18px;
+    height: 18px;
+    background-color: #DEA033;
+    border-radius: 50%;
+    color: #FFFFFF;
+    font-size: 14px;
+    line-height: calc(17 / 14);
+    text-align: center;
+    position: absolute;
+    top: 9%;
+    right: 22%;
+}
+
+.chat-aside .sidebar-chats-number {
+    top: -10%;
+    right: -18%;
+}
+
+.chat-aside .sidebar {
+    background-color: #FFFFFF;
+    position: static;
+}
+
+.chat-aside .sidebar-wrapper {
+    /* padding: 10px 43px; */
+    padding: 10px 0;
+    justify-content: space-evenly;
+    flex-flow: row nowrap;
+}
+
+.chat-aside .sidebar .nav-link {
+    padding: 0;
+    margin: 0;
+}
+
+.chat-aside .sidebar-icon {}
+
+
+/* modal settings */
+.modal-settings {}
+
+.modal-settings .modal-content {
+    max-width: 508px;
+    margin: 0 auto;
+}
+
+.modal-settings .modal-header,
+.modal-settings .modal-footer {
+    height: 47px;
+    background-color: #DEA033;
+}
+
+.modal-settings .modal-header {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    align-items: center;
+}
+
+.modal-settings .modal-title,
+.settings-label,
+.modal-out .text-muted {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: calc(29/24);
+}
+
+.modal-settings .modal-title {
+    margin: 0 auto;
+}
+
+.modal-settings .close {
+    margin: 0;
+    padding-top: .5rem;
+    padding-bottom: 0.5rem;
+    color: #FFFFFF;
+    float: none;
+    position: absolute;
+    right: 0;
+}
+
+.modal-settings-form {
+    max-width: 350px;
+}
+
+.settings-label {
+    color: #979797;
+    background-color: transparent;
+}
+
+.settings-input {
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #DEA033;
+    border-radius: 0;
+    background-color: transparent !important;
+}
+
+.settings-input:focus {
+    box-shadow: none;
+    outline: none;
+}
+
+.modal-settings-form .custom-switch .custom-control-label::before {
+    width: 50px;
+    height: 30px;
+    background-color: #DEA033;
+    border-radius: 15.5px;
+    top: -5px;
+}
+
+.modal-settings-form .custom-switch .custom-control-label::after {
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    top: -3px;
+}
+
+.custom-switch .custom-control-input:checked~.custom-control-label::after {
+    transform: translateX(1.2rem);
+}
+
+/* modal out account */
+.modal-out .modal-content {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.modal-out .text-muted,
+.modal-out .text-body {
+    color: #333333 !important;
+}
+
+.modal-out .text-body,
+.modal-out-button--left,
+.modal-out-button--right {
+    font-size: 18px;
+    line-height: calc(21/18);
+}
+
+.modal-out .text-body {
+    font-weight: 500;
+}
+
+.modal-out .modal-footer{
+    border-top: 1px solid #DEA033 !important;
+}
+
+.modal-out-button {
+    color: #DEA033;
+}
+
+.modal-out-button:focus{
+    outline: none!important;
+}
+
+.modal-out-button--left::after{
+    content: '';
+    width: 1px;
+    height: 75px;
+    position: absolute;
+    right: 0;
+    top: -17px;
+    bottom: 0;
+    background-color: #DEA033 !important;
+}
+
+.modal-out-button--right {
+    color: #FF0000;
+}

@@ -1,0 +1,140 @@
+/* bootstrap fixed */
+.card {
+    max-height: inherit;
+    border: none !important;
+    -webkit-border-radius: 0 !important;
+       -moz-border-radius: 0 !important;
+            border-radius: 0 !important;
+}
+
+.card-img {
+    max-height: inherit;
+}
+
+/* myself styles */
+.desktop-content-table {
+    max-height: 156px;
+    height: 100%;
+    margin: 0 -20px;
+    border-top: 3px solid #FFFFFF;
+    bottom: -1.25rem;
+}
+
+.desktop-content-table__item:nth-child(2) {
+    border-left: 3px solid #FFFFFF;
+    border-right: 3px solid #FFFFFF;
+}
+
+.desktop-col__number {
+    font-weight: bold;
+    font-size: 54px;
+    line-height: 74px;
+    color: #DEA033;
+}
+
+.desktop-col__text {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+}
+
+.desktop-content-btn{
+    font-size: 28px;
+    line-height: 38px;
+}
+
+/* ---------
+    Services
+ -----------*/
+.pv-27px {
+    padding: 27px 0;
+}
+
+.services-block {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    -webkit-box-pack: space-evenly;
+    -webkit-justify-content: space-evenly;
+       -moz-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+}
+
+.services__item {
+    max-width: 292px;
+    width: 100%;
+    height: 280px;
+    padding: 49px 33px 66px;
+    background: #FFFFFF;
+    -webkit-border-radius: 12px;
+       -moz-border-radius: 12px;
+            border-radius: 12px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+       -moz-box-orient: vertical;
+       -moz-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+       -moz-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+       -moz-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+.services-block__description {
+    /* font-family: 'San Francisco'; */
+    text-align: center;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: -webkit-calc(24/20);
+    line-height: -moz-calc(24/20);
+    line-height: calc(24/20);
+}
+
+/* ---------------
+    Video Section
+---------------- */
+.desktop-video-block {}
+
+.desktop-video-info {}
+
+.desktop-video__title {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 33px;
+}
+
+.desktop-video-description {
+    font-size: 20px;
+    line-height: 27px;
+}
+
+.desktop-video_link-icon {
+    margin-bottom: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+.desktop-video_link-text {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    color: #000000;
+}
