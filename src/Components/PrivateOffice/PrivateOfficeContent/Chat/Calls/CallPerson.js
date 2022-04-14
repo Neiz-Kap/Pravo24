@@ -8,7 +8,7 @@ const CallPerson = (props) => {
   // debugger;
   return (
     <div className={`mx-auto d-flex flex-column align-items-center`}>
-      <Image src={avatar} className="w-100" roundedCircle />
+      <Image src={avatar} className="w-100 call__image" roundedCircle />
       <span className="call__title semibold-font">{props.name}</span>
     </div>
   );

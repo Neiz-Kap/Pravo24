@@ -13,13 +13,7 @@ import services_icon_5 from '../../../Image/services/services_icon(5).svg';
 import services_icon_6 from '../../../Image/services/services_icon(6).svg';
 
 import CallSection from '../GeneralSections/CallSection';
-import ApplicationSection from "../GeneralSections/ApplicationSection";
-
-// const DesktopPage = () => {
-//     return (
-
-//     );
-// }
+import ApplicationSection from "../GeneralSections/ApplicationSection";  
 
 const ServicesPage = () => {
     return (

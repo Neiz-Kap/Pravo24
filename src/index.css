@@ -205,6 +205,10 @@ size
     width: max-content;
 }
 
+.height-inherit{
+    height: inherit
+}
+
 .img-xs {
     max-width: none;
     width: 38px;

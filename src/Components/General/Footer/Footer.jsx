@@ -42,16 +42,6 @@ const Footer = () => {
                   </p>
                   <p className="Gray">© 2012—2020 Все права защищены</p>
                 </Nav.Item>
-                {/* <Nav.Link>       */}
-                {/* <Link > */}
-                {/* </Nav.Link> */}
-                {/* <Nav.Link> */}
-                {/* <Link > */}
-
-                {/* </Nav.Link> */}
-                {/* <Nav.Link> */}
-                {/* <Link to="/contacts"> */}
-                {/* </Nav.Link> */}
               </Nav>
             </Col>
             <Col className="d-flex justify-content-end">

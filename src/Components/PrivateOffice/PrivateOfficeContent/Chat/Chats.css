@@ -520,24 +520,30 @@ span {
     Video Call
 
    --------------*/
+.call__background{
+    background-color: #323232;
+}
 .videocall__container {
     max-width: 1760px;
     padding: 0 65px;
-    background-color: #323232;
     position: relative;
 }
 
-.videocall__wrap {
+.call__image {
     max-width: 200px;
+    width: 100%;
 }
 
 .call__title {
-    margin-left: 98px;
     font-size: 20px;
     line-height: -webkit-calc(24/20);
     line-height: -moz-calc(24/20);
     line-height: calc(24/20);
     color: #FFFFFF;
+}
+
+.call__title--place-top{
+    margin-left: 98px;
 }
 
 .audio {
@@ -547,7 +553,14 @@ span {
     transform: translate(-50%, -173px);
 }
 
+/*
+    call management (buttons)
+*/
+.call__list{
+    max-width: 292px;
+}
 .call__item{
+    padding: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -570,18 +583,18 @@ span {
     background-color: #6C7A92;
 }
 
-.call__btn--color-grey {
+/* Кнопки управления */
+.call__btn--type-managment {
     background-color: #D9E3F7;
+}
+
+.call__btn--type-managment:hover{
+    background-color: #FFFFFF;
 }
 
 .call__icon--type-micro {
     -webkit-mask-image: url(../../../../Image/PersonalAreaContent/chats/call/mute.svg);
     mask-image: url(../../../../Image/PersonalAreaContent/chats/call/mute.svg);
-}
-
-.call__btn:hover .call__icon--type-micro,
-.call__btn:hover .call__icon--type-camera {
-    background-color: #FFFFFF;
 }
 
 .call_btn--active {
@@ -590,6 +603,15 @@ span {
 
 .call_btn--active .call__icon{
     background-color: #FFFFFF;
+}
+
+.call__btn:hover .call__icon--type-micro,
+.call__btn:hover .call__icon--type-camera {
+    background-color: #000000;
+}
+
+.call_btn--active:hover::before{
+    background-color: #000000;
 }
 
 .call__micro.call_btn--active::before {
@@ -603,7 +625,6 @@ span {
     bottom: 0;
     z-index: 9;
 }
-
 
 .call__icon:hover .call__icon--type-micro {}
 
@@ -619,14 +640,28 @@ span {
 }
 
 
-
 .call__text{
     width: max-content;
+    color: #FFFFFF !important;
+    margin-top: 13px;
     text-align: center;
 }
 
 /* video call */
+.video{
+    height: calc(100vh - 56px);
+}
+
+.video__image{
+    max-height: 72%;
+    height: 100%;
+}
+
+
+
 .videocall__photo{
     max-width: 48%;
     max-height: 750px;
 }
+
+

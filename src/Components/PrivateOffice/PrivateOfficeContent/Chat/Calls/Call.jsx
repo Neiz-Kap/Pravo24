@@ -15,7 +15,7 @@ class Call extends React.Component {
             name: 'Николай',
             personUrl: '',
             // почитай об setInterval
-            realTime: '12:56',
+            durationCall: '00:01',
             // class for style image users
             // 'call--type-video'
             typeCall: 'video',
@@ -31,21 +31,18 @@ class Call extends React.Component {
     render() {
         return (
             // <main>
-                <section>
+                <section className="call__background">
                     <Container fluid className="videocall__container h-100vh">
-                        <span className="py-3 call__title">{this.state.typeCall == 'audio' ? 'Право24' : this.state.name}</span>
-                        {this.state.typeCall == 'audio' ?
-                            // передадим сюда ссылку на фото и имя собеседника
-                            <div className={`mx-auto ${this.state.typeCall} videocall__wrap w-100`}>
-                                <CallPerson name={this.state.name} typeCall={this.state.typeCall} />
-                                <CallManagement realTime={this.state.realTime} isCall={this.state.isCall}/>
-                            </div>
-                            :
-                            <div className={`mx-auto ${this.state.typeCall}`}>
-                                <VideoPerson />
-                                <CallManagement realTime={this.state.realTime} isCall={this.state.isCall}/>
-                            </div>
-                        }
+                        <span className="py-3 call__title call__title--place-top">{this.state.typeCall == 'audio' ? 'Право24' : this.state.name}</span>
+                        <div className={`mx-auto ${this.state.typeCall}`}>
+                            {this.state.typeCall == 'audio' ?
+                                // передадим сюда ссылку на фото и имя собеседника
+                                 <CallPerson name={this.state.name} typeCall={this.state.typeCall} />
+                                : <VideoPerson />
+                            }
+                            <CallManagement durationCall={this.state.durationCall} isCall={this.state.isCall}/>
+                        </div>
+
                     </Container>
                 </section>
             // </main>
